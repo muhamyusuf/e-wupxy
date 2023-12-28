@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import MaxWidthWrapper from '../MaxWidthWrapper';
-import { Icons } from '../Icons';
-import NavItems from './NavItems';
+import MaxWidthWrapper from '@/components/MaxWidthWrapper';
+import { Icons } from '@/components/Icons';
+import NavItems from '@/components/nav-group/NavItems';
 import { buttonVariants } from '@/components/ui/button';
-// import Cart from './Cart'
+import Cart from '@/components/Cart';
 // import { getServerSideUser } from '@/lib/payload-utils'
 import { cookies } from 'next/headers';
 // import UserAccountNav from './UserAccountNav'
@@ -73,7 +73,9 @@ const Navbar = () => {
           </div>
          )}
 
-         <div className="ml-4 flow-root lg:ml-6">{/* <Cart /> */}</div>
+         <div className="ml-4 flow-root lg:ml-6">
+          <Cart />
+         </div>
         </div>
        </div>
       </div>

@@ -1,10 +1,13 @@
-import { cn } from '@/lib/utils';
-import Navbar from '@/components/nav-group/Navbar';
+import { cn, constructMetadata } from '@/lib/utils';
 import type { Metadata } from 'next';
+import Navbar from '@/components/nav-group/Navbar';
 import { Inter } from 'next/font/google';
+
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
+
+export const metadata = constructMetadata();
 
 export default function RootLayout({
  children,
